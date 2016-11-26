@@ -22,14 +22,22 @@
         ],
         "languages": [
             {
-                "id": "json",
+                "id": "cf-template",
                 "extensions": [
                     ".cf.json"
                 ],
                 "aliases": [
                     "Cloud Formation Template",
                     "cf-template"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cf-template",
+                "scopeName": "source.json",
+                "path": "./syntaxes/JSON.tmLanguage"
             }
         ]
     },
