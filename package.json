@@ -1,9 +1,9 @@
 {
     "name": "cf-plugin",
-    "displayName": "cf-plugin",
+    "displayName": "Cloud Formation Templates",
     "description": "Provide support for code completion and validation of AWS Cloud Formation templates",
     "version": "0.0.1",
-    "publisher": "PradipHudekar",
+    "publisher": "pradiphudekar",
     "engines": {
         "vscode": "^1.5.0"
     },

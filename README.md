@@ -7,12 +7,23 @@ It uses json schema validation feature of VSCode to validate your `.cf.json` fil
 
 ## Features
 
-1. Json validation
-2. Code completion
+1. Code completion
+
+![Code completion](images/code-completion.png)
+
+2. Template Validation
+
+![Template validation](images/template-validation.png)
+
 3. Type checking
+
+![Type checking](images/type-checking.png)
 
 
 ## Requirements
 
 To make use of this extension, make sure your template filename ends with `.cf.json`
 
+## Source
+
+The source for this extension is maintained at Github repository [git@github.com:krishnan-mani/cf-plugin.git](git@github.com:krishnan-mani/cf-plugin.git)
