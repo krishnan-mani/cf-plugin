@@ -9,15 +9,15 @@ It uses json schema validation feature of VSCode to validate your `.cf.json` fil
 
 1. Code completion
 
-![Code completion](https://github.com/krishnan-mani/cf-plugin/raw/master/images/code-completion.png)
+![Code completion](images/code-completion.png)
 
 2. Template Validation
 
-![Template validation](https://github.com/krishnan-mani/cf-plugin/raw/master/images/template-validation.png)
+![Template validation](images/template-validation.png)
 
 3. Type checking
 
-![Type checking](https://github.com/krishnan-mani/cf-plugin/raw/master/images/type-checking.png)
+![Type checking](images/type-checking.png)
 
 
 ## Requirements
