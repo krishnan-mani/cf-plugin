@@ -99,3 +99,7 @@
 - As a developer,
   - I want to be able to rename a Resource (logical id) or a Parameter (name), and get assistance in renaming any references to the same,
   - So I can rapidly make changes to template elements in a consistent fashion.
+
+- As a developer,
+  - I want to know whether changes to a particular Property for a given Resource will result in stack updates that involve either "No interruption", "Some interruption", or "Replacement",
+  - So I can decide on how to make template changes with reference to the impact on existing stacks that may be updated for the template changes.
