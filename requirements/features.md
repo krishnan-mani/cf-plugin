@@ -1,4 +1,4 @@
-### Assistance with authoring valid templates
+### Authoring valid templates
 
 - As a developer,
   - I want the specification of, and validation of supported AWS resource types, 
@@ -11,7 +11,7 @@
   - So I can specify Property elements accurately in the template.
 
 - As a developer,
-  - I want to get assistance with specifying appropriate validation for Parameter values in a template,
+  - I want to get assistance with specifying validation for Parameter values in a template,
   - (including 'AllowedPattern', 'AllowedValues', 'ConstraintDescription', and so on),
   - So I can specify Property elements accurately in the template.
 
@@ -23,7 +23,7 @@
 - As a developer,
   - I want the specification of, and validation of the supported values for Property keys in a resource element for an AWS resource type,
   - in a 'static' context,
-  - (such as the values 'host' or 'default' for the property 'Affinity' for a resource of type 'AWS::EC2::Instance'),
+  - (such as the allowed values: ['host', 'default'] for the property 'Affinity' for a resource of type 'AWS::EC2::Instance'),
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
@@ -42,7 +42,7 @@
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
-  - I want assistance on, as well as validation of the particular syntax applicable to declaring property values in a template, 
+  - I want assistance on, as well as validation of the particular syntax applicable to declaring Property values in a template, 
   - (such as 'scalar' values of Type 'String', lists, and intrinsic functions including references),
   - So I can ensure valid resource elements in the template.
 
@@ -50,6 +50,11 @@
   - I want assistance on, as well as validation of embedded Property types for Property values for a resource,
   - (such as the embedded property type 'EC2 Network Interface' for the property 'NetworkInterfaces' for 'AWS::EC2::Instance')
   - So I can ensure valid resource elements in the template. 
+
+- As a developer,
+  - I want assistance on, as well as validation of the particular Attributes available for a given Resource type,
+  - When the same Resource is referenced (by logical Id) as part of an Output element,
+  - So I can ensure valid output elements in the template
 
 ### Creating and managing stacks
 
@@ -91,13 +96,13 @@
   - So I can identify the usage of such elements across the template.
 
 - As a developer,
-  - I want to be able to navigate to (and between) any and all references to an element in the template (such as a resource, or a parameter), and the declaration of such element
+  - I want to navigate to (and between) any and all references to an element in the template (such as a resource, or a parameter), and the declaration of such element
   - So I can work with either the references or the declaration of such elements.
 
 ### Refactoring
 
 - As a developer,
-  - I want to be able to rename a Resource (logical id) or a Parameter (name), and get assistance in renaming any references to the same,
+  - I want to rename a Resource (logical id) or a Parameter (name), and get assistance in renaming any references to the same,
   - So I can rapidly make changes to template elements in a consistent fashion.
 
 - As a developer,
