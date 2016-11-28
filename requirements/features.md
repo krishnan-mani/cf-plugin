@@ -67,12 +67,12 @@
   - I want to visually distinguish between various elements of a template,
   - So I can understand templates at a glance.
 
-The various elements of a CloudFormation template are as follows:
-- Top-level elements: Parameters, Mappings, Resources, Metadata, Outputs, etc.
-- Resource logical Ids: declaration, as well as references
-- Property names, property values, pseudo-parameters
-- Intrinsic functions
-- Return values for a resource element
+- The various elements of a CloudFormation template are as follows:
+  - Top-level elements: Parameters, Mappings, Resources, Metadata, Outputs, etc.
+  - Resource logical Ids: declaration, as well as references
+  - Property names, property values, pseudo-parameters
+  - Intrinsic functions
+  - Return values for a resource element
 
 - As a developer or user of a CloudFormation template,
   - I want to be alerted to possible issues with a template with visual and descriptive warnings,
