@@ -12,7 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-     "onLanguage:json"
+     "onLanguage:cf-json"
   ],
   "main": "./out/src/extension",
   "contributes": {
