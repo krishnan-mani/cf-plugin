@@ -2,43 +2,43 @@
 
 - As a developer,
   - I want the specification of, and validation of supported AWS resource types, 
-  - (such as 'AWS::EC2::Instance'),
+  - (such as ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
   - I want the specification of, and validation of the supported types for Parameters in a template, 
-  - (such as 'String', as well as AWS-specific parameter types such as 'AWS::EC2::KeyPair::KeyPairName'),
+  - (such as 'String', as well as AWS-specific parameter types such as ```AWS::EC2::KeyPair::KeyPairName```),
   - So I can specify Property elements accurately in the template.
 
 - As a developer,
-  - I want to get assistance with specifying validation for Parameter values in a template,
-  - (including 'AllowedPattern', 'AllowedValues', 'ConstraintDescription', and so on),
+  - I want assistance with validating Parameter values in a template,
+  - (including ```AllowedPattern```, ```AllowedValues```, ```ConstraintDescription```, and so on),
   - So I can specify Property elements accurately in the template.
 
 - As a developer,
-  - I want to get the listing of, and description of the various Property keys required for an AWS resource type,
-  - (such as 'ImageId', and 'InstanceType' for 'AWS::EC2::Instance'),
+  - I want to get a listing of, and description of various Property keys required for an AWS resource type,
+  - (such as ```ImageId```, ```InstanceType```, etc. for ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
-  - I want the specification of, and validation of the supported values for Property keys in a resource element for an AWS resource type,
-  - in a 'static' context,
-  - (such as the allowed values: ['host', 'default'] for the property 'Affinity' for a resource of type 'AWS::EC2::Instance'),
+  - I want the specification of, and validation of supported values for properties in a resource element for an AWS resource type,
+  - when such values belong to an enumeration,
+  - (such as the allowed values: [```host```, ```default```] for the property ```Affinity``` for a resource of type ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
-  - I want to get an indication of the Property keys in a resource element for an AWS resource type,
-  - where values for the Property refer to resource configuration from the user's AWS account(s),
-  - (such as the values of 'ImageId' or 'InstanceType' properties for a resource of type 'AWS::EC2::Instance'),
+  - I want assistance with values for properties in a resource element for an AWS resource type,
+  - where values refer to resource configuration from the user's AWS account(s),
+  - (such as the values of ```ImageId``` property for a resource of type ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
-  - I want the specification of, and validation of the required, conditionally required, optional, or mutually exclusive Property keys for an AWS resource type,
-  - (such as 'ImageId' is required for 'AWS::EC2::Instance'),
-  - (such as 'InstanceInitiatedShutdownBehavior' is optional for 'AWS::EC2::Instance'),
-  - (such as 'SecurityGroupIds' is conditionally required when specifying a VPC Security Group for 'AWS::EC2::Instance'),
-  - (such as a value of 'dedicated' or 'host' is only allowed for 'Tenancy' if the resource of Type 'AWS::EC2::Instance' is being launched in a VPC, therefore requiring one or more of "SecurityGroupIds" and/or "SubnetId", etc.),
-  - (such as: specify either the 'NetworkInterfaces' property or 'SubnetId' property, but not both for 'AWS::EC2::Instance'),
+  - I want the specification of, and validation of the required, conditionally required, optional, or mutually exclusive properties for an AWS resource type, for example, for ```AWS::EC2::Instance```,
+  - ```ImageId``` is required,
+  - ```InstanceInitiatedShutdownBehavior``` is optional,
+  - ```SecurityGroupIds``` is conditionally required when specifying a VPC Security Group,
+  - a value of either ```"dedicated"``` or ```"host"``` is only allowed for ```Tenancy``` if the instance is being launched in a VPC, therefore requiring one or more of ```SecurityGroupIds``` and/or ```SubnetId```, and so on
+  - specify either the ```NetworkInterfaces``` property or ```SubnetId``` property, but not both,
   - So I can ensure valid resource elements in the template.
 
 - As a developer,
