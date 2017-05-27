@@ -1,0 +1,7 @@
+- For an element in "PropertyTypes",
+  - "Properties" maps to "properties"
+  - For each property:
+    - "PrimitiveType" maps to "type",
+    - "Required" is indicated for each property,
+    - A link to "Documentation" is provided instead of a "description"
+    - An "UpdateType" is specified
