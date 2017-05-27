@@ -1,18 +1,17 @@
 - Supports authoring of CloudFormation templates in JSON
-- Supports validation of the JSON format by itself
-- Highlights errors with a helpful error message (as a pop-up message visible on hover)
-- Highlights errors when JSON is malformed
+- Supports validation of the template for well-formed JSON
+- Highlights errors with a helpful error message (visible in the 'Problems' pane, as well as an pop-up message visible on hovering over a an highlighted element)
 - Highlights missing attributes that are required at a minimum, such as:
-  - a minimum of one resource per template
-  - required 'Properties' for 'Resource' elements of a given 'Type'
-- Prompts the choice of supported top-level elements (such as 'Parameters', 'Resources', etc.)
+  - a minimum of ```Resources``` top-level element required per template
+  - required ```Properties``` for resource elements of a given ```Type```
+- Prompts the choice of supported top-level elements (such as ```Parameters```, ```Resources```, etc.)
 - Auto-completes known elements
-- Auto-completes the structure of certain elements (such as 'Outputs', 'Resources', etc.)
+- Auto-completes the structure of certain elements (such as ```Outputs```, ```Resources```, etc.)
 - Prompts the choice of supported attributes for each element
-  - for elements in 'Parameters'
-  - for elements in 'Resources'
-  - for elements in 'Outputs'
-- Prompts the choice of supported 'Type' information
-  - for 'Parameters'
-  - for 'Resources'
+  - for elements in the ```Parameters``` section
+  - for elements in the ```Resources``` section
+  - for elements in the ```Outputs``` section
+- Prompts the choice of supported ```Type``` information
+  - for ```Parameters```
+  - for ```Resources```
 - Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema)
