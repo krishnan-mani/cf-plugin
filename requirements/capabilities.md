@@ -15,4 +15,4 @@
 - Prompts the choice of supported 'Type' information
   - for 'Parameters'
   - for 'Resources'
-- Currently relies upon a JSON schema for CloudFormation as published at (jsonschema)[https://github.com/fungusakafungus/cloudformation-jsonschema]
+- Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema)
