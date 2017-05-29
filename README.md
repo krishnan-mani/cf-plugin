@@ -1,11 +1,32 @@
 
-# Cloud Formation Templates
+# Author templates for AWS CloudFormation
 
-This extension help to craete AWS Cloud Formation templates with ease. 
+This extension help you author AWS CloudFormation templates with ease.
 
-It uses json schema validation feature of VSCode to validate your `.cf.json` files against AWS Cloud Formation json schema available at [https://github.com/fungusakafungus/cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema)
+It uses JSON schema validation features of VSCode to validate your template files against a schema for AWS CloudFormation (currently uses [cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema))
 
-## Features
+## Capabilities
+
+- Supports authoring of CloudFormation templates in JSON
+- Supports validation of the JSON format by itself
+- Highlights errors with a helpful error message (as a pop-up message visible on hover)
+- Highlights errors when JSON is malformed
+- Highlights missing attributes that are required at a minimum, such as:
+  - a minimum of one resource per template
+  - required 'Properties' for 'Resource' elements of a given 'Type'
+- Prompts the choice of supported top-level elements (such as 'Parameters', 'Resources', etc.)
+- Auto-completes known elements
+- Auto-completes the structure of certain elements (such as 'Outputs', 'Resources', etc.)
+- Prompts the choice of supported attributes for each element
+  - for elements in 'Parameters'
+  - for elements in 'Resources'
+  - for elements in 'Outputs'
+- Prompts the choice of supported 'Type' information
+  - for 'Parameters'
+  - for 'Resources'
+- Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema)
+
+## Illustration
 
 1. Code completion
 
@@ -22,8 +43,8 @@ It uses json schema validation feature of VSCode to validate your `.cf.json` fil
 
 ## Requirements
 
-To make use of this extension, make sure your template filename ends with `.cf.json`
+This extension is active when working with templates with a filename ending in `.cf.json`
 
 ## Source
 
-The source for this extension is maintained at Github repository [git@github.com:krishnan-mani/cf-plugin.git](git@github.com:krishnan-mani/cf-plugin.git)
+The source for this extension is maintained at Github repository [cf-plugin](git@github.com:krishnan-mani/cf-plugin.git)
