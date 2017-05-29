@@ -1,8 +1,8 @@
 {
   "name": "cf-templates",
-  "displayName": "Cloud Formation Templates",
+  "displayName": "CloudFormation Templates",
   "description": "Provide support for code completion and validation of AWS Cloud Formation templates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "pradiphudekar",
   "repository": "https://github.com/krishnan-mani/cf-plugin",
   "engines": {
