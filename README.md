@@ -8,23 +8,21 @@ It uses JSON schema validation features of VSCode to validate your template file
 ## Capabilities
 
 - Supports authoring of CloudFormation templates in JSON
-- Supports validation of the JSON format by itself
-- Highlights errors with a helpful error message (as a pop-up message visible on hover)
-- Highlights errors when JSON is malformed
-- Highlights missing attributes that are required at a minimum, such as:
-  - a minimum of one resource per template
-  - required 'Properties' for 'Resource' elements of a given 'Type'
-- Prompts the choice of supported top-level elements (such as 'Parameters', 'Resources', etc.)
-- Auto-completes known elements
-- Auto-completes the structure of certain elements (such as 'Outputs', 'Resources', etc.)
-- Prompts the choice of supported attributes for each element
-  - for elements in 'Parameters'
-  - for elements in 'Resources'
-  - for elements in 'Outputs'
-- Prompts the choice of supported 'Type' information
-  - for 'Parameters'
-  - for 'Resources'
+- Highlights errors with a helpful error message (in the "Problems" pane, and as a pop-up message visible on hover)
+  - Highlights errors when JSON is malformed
+  - Highlights errors for required elements, required properties, invalid document structure, etc.
+- Suggests top-level elements (such as ```Parameters```, ```Resources```, etc.)
+- Auto-completes known elements (such as ```AWSTemplateFormatVersion```)
+- Auto-completes structure of elements, intrinsic functions, etc.
+- Suggests supported properties for elements in ```Parameters```, ```Resources```, ```Outputs```, etc.
+- Suggests supported ```Type``` information for ```Parameters``` and ```Resources```
+- Suggests required and supported properties for each resource (by ```Type```)
+- Suggests intrinsic function names and 'shape'
 - Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/krishnan-mani/cloudformation-jsonschema)
+
+## Coming soon ... 
+
+See [TODO](TODO.md) and [requirements](requirements/features.md)
 
 ## Illustration
 
