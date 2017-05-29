@@ -28,18 +28,53 @@ It uses JSON schema validation features of VSCode to validate your template file
 
 ## Illustration
 
-1. Code completion
+1. Suggest top-level elements
 
-![Code completion](images/code-completion.png)
+![Top-level elements](images/top-level-elements-prompts.png)
 
-2. Template Validation
+2. Validate that JSON is well-formed
 
-![Template validation](images/template-validation.png)
+![well-formed JSON](images/json-well-formedness-validation.png)
 
-3. Type checking
+3. Suggest properties for ```Parameters``` elements
 
-![Type checking](images/type-checking.png)
+![properties for ```Parameters``` elements](images/parameter-property-prompts.png)
 
+4. Validate required ```Type``` for ```Parameters``` elements
+
+![required ```Type``` for ```Parameters```](images/missing-parameter-type.png)
+
+5. Suggest ```Type``` for ```Parameters``` elements
+
+![supported values of ```Type``` for ```Parameters``` element](images/parameter-type-auto-completion.png)
+
+6. Validate ```Type``` value for ```Parameters```
+
+![invalid ```Type``` for ```Parameters``` element](images/parameter-type-validation.png)
+
+7. Suggest properties for ```Resources``` elements
+
+![properties for ```Resources``` element](images/resource-property-prompts.png)
+
+8. Suggest ```Type``` for ```Resources``` elements
+
+![supported values of ```Type``` for ```Resources``` element](images/resource-type-prompts.png)
+
+9. Validate required properties for a given resource (by ```Type```)
+
+![validate properties for a given ```Type``` of ```Resources``` element](images/resource-type-required-properties-validation.png)
+
+10. Suggest properties for a given resource (by ```Type```)
+
+![properties for a given ```Type``` of ```Resources``` element](images/resource-type-property-prompts.png)
+
+11. Suggest intrinsic function names
+
+![intrinsic functions](images/function-names-prompt.png)
+
+12. Suggest intrinsic function 'shape'
+
+![shape of intrinsic function](images/intrinsic-function-shape.png)
 
 ## Requirements
 
