@@ -3,7 +3,7 @@
 
 This extension help you author AWS CloudFormation templates with ease.
 
-It uses JSON schema validation features of VSCode to validate your template files against a schema for AWS CloudFormation (currently uses [cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema))
+It uses JSON schema validation features of VSCode to validate your template files against a schema for AWS CloudFormation (currently uses [cloudformation-jsonschema](https://github.com/krishnan-mani/cloudformation-jsonschema))
 
 ## Capabilities
 
@@ -24,7 +24,7 @@ It uses JSON schema validation features of VSCode to validate your template file
 - Prompts the choice of supported 'Type' information
   - for 'Parameters'
   - for 'Resources'
-- Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema)
+- Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/krishnan-mani/cloudformation-jsonschema)
 
 ## Illustration
 
