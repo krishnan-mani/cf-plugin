@@ -1,6 +1,6 @@
 ### Authoring valid templates
 
-- As a developer,
+- [x] As a developer,
   - I want the specification of, and validation of supported AWS resource types, 
   - (such as 'AWS::EC2::Instance'),
   - So I can ensure valid resource elements in the template.
