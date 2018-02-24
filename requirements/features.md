@@ -2,36 +2,36 @@
 
 - [x] As a developer,
   - I want the specification of, and validation of supported AWS resource types, 
-  - (such as 'AWS::EC2::Instance'),
+  - (such as ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
 - [x] As a developer,
   - I want the specification of, and validation of the supported types for Parameters in a template, 
-  - (such as 'String', as well as AWS-specific parameter types such as 'AWS::EC2::KeyPair::KeyPairName'),
+  - (such as 'String', as well as AWS-specific parameter types such as ```AWS::EC2::KeyPair::KeyPairName```),
   - So I can specify Property elements accurately in the template.
 
-- [x] As a developer,
-  - I want to get assistance with specifying validation for Parameter values in a template,
-  - (including 'AllowedPattern', 'AllowedValues', 'ConstraintDescription', and so on),
+- As a developer,
+  - I want assistance with validating Parameter values in a template,
+  - (including ```AllowedPattern```, ```AllowedValues```, ```ConstraintDescription```, and so on),
   - So I can specify Property elements accurately in the template.
 
-- [x] As a developer,
-  - I want to get the listing of, and description of the various Property keys required for an AWS resource type,
-  - (such as 'ImageId', and 'InstanceType' for 'AWS::EC2::Instance'),
+- As a developer,
+  - I want to get a listing of, and description of various Property keys required for an AWS resource type,
+  - (such as ```ImageId```, ```InstanceType```, etc. for ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
-- [ ] As a developer,
-  - I want the specification of, and validation of the supported values for Property keys in a resource element for an AWS resource type,
-  - in a 'static' context,
-  - (such as the allowed values: ['host', 'default'] for the property 'Affinity' for a resource of type 'AWS::EC2::Instance'),
+- As a developer,
+  - I want the specification of, and validation of supported values for properties in a resource element for an AWS resource type,
+  - when such values belong to an enumeration,
+  - (such as the allowed values: [```host```, ```default```] for the property ```Affinity``` for a resource of type ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
 
-- [ ] As a developer,
-  - I want to get an indication of the Property keys in a resource element for an AWS resource type,
-  - where values for the Property refer to resource configuration from the user's AWS account(s),
-  - (such as the values of 'ImageId' or 'InstanceType' properties for a resource of type 'AWS::EC2::Instance'),
+- As a developer,
+  - I want assistance with values for properties in a resource element for an AWS resource type,
+  - where values refer to resource configuration from the user's AWS account(s),
+  - (such as the values of ```ImageId``` property for a resource of type ```AWS::EC2::Instance```),
   - So I can ensure valid resource elements in the template.
-
+  
 - As a developer,
   - I want the specification of, and validation of the required, conditionally required, optional, or mutually exclusive Property keys for an AWS resource type,
   - [x] (such as 'ImageId' is required for 'AWS::EC2::Instance'),

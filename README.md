@@ -1,29 +1,83 @@
 
-# Cloud Formation Templates
+# Author templates for AWS CloudFormation
 
-This extension help to craete AWS Cloud Formation templates with ease. 
+This extension help you author AWS CloudFormation templates with ease.
 
-It uses json schema validation feature of VSCode to validate your `.cf.json` files against AWS Cloud Formation json schema available at [https://github.com/fungusakafungus/cloudformation-jsonschema](https://github.com/fungusakafungus/cloudformation-jsonschema)
+It uses JSON schema validation features of VSCode to validate your template files against a schema for AWS CloudFormation (currently uses [cloudformation-jsonschema](https://github.com/krishnan-mani/cloudformation-jsonschema))
 
-## Features
+## Capabilities
 
-1. Code completion
+- Supports authoring of CloudFormation templates in JSON
+- Highlights errors with a helpful error message (in the "Problems" pane, and as a pop-up message visible on hover)
+  - Highlights errors when JSON is malformed
+  - Highlights errors for required elements, required properties, invalid document structure, etc.
+- Suggests top-level elements (such as ```Parameters```, ```Resources```, etc.)
+- Auto-completes known elements (such as ```AWSTemplateFormatVersion```)
+- Auto-completes structure of elements, intrinsic functions, etc.
+- Suggests supported properties for elements in ```Parameters```, ```Resources```, ```Outputs```, etc.
+- Suggests supported ```Type``` information for ```Parameters``` and ```Resources```
+- Suggests required and supported properties for each resource (by ```Type```)
+- Suggests intrinsic function names and 'shape'
+- Currently relies upon a JSON schema for CloudFormation as published at [cloudformation-jsonschema](https://github.com/krishnan-mani/cloudformation-jsonschema)
 
-![Code completion](images/code-completion.png)
+## Coming soon ... 
 
-2. Template Validation
+See [TODO](TODO.md) and [requirements](requirements/features.md)
 
-![Template validation](images/template-validation.png)
+## Illustration
 
-3. Type checking
+1. Suggest top-level elements
 
-![Type checking](images/type-checking.png)
+![Top-level elements](images/top-level-elements-prompts.png)
 
+2. Validate that JSON is well-formed
+
+![well-formed JSON](images/json-well-formedness-validation.png)
+
+3. Suggest properties for ```Parameters``` elements
+
+![properties for ```Parameters``` elements](images/parameter-property-prompts.png)
+
+4. Validate required ```Type``` for ```Parameters``` elements
+
+![required ```Type``` for ```Parameters```](images/missing-parameter-type.png)
+
+5. Suggest ```Type``` for ```Parameters``` elements
+
+![supported values of ```Type``` for ```Parameters``` element](images/parameter-type-auto-completion.png)
+
+6. Validate ```Type``` value for ```Parameters```
+
+![invalid ```Type``` for ```Parameters``` element](images/parameter-type-validation.png)
+
+7. Suggest properties for ```Resources``` elements
+
+![properties for ```Resources``` element](images/resource-property-prompts.png)
+
+8. Suggest ```Type``` for ```Resources``` elements
+
+![supported values of ```Type``` for ```Resources``` element](images/resource-type-prompts.png)
+
+9. Validate required properties for a given resource (by ```Type```)
+
+![validate properties for a given ```Type``` of ```Resources``` element](images/resource-type-required-properties-validation.png)
+
+10. Suggest properties for a given resource (by ```Type```)
+
+![properties for a given ```Type``` of ```Resources``` element](images/resource-type-property-prompts.png)
+
+11. Suggest intrinsic function names
+
+![intrinsic functions](images/function-names-prompt.png)
+
+12. Suggest intrinsic function 'shape'
+
+![shape of intrinsic function](images/intrinsic-function-shape.png)
 
 ## Requirements
 
-To make use of this extension, make sure your template filename ends with `.cf.json`
+This extension is active when working with templates with a filename ending in `.cf.json`
 
 ## Source
 
-The source for this extension is maintained at Github repository [git@github.com:krishnan-mani/cf-plugin.git](git@github.com:krishnan-mani/cf-plugin.git)
+The source for this extension is maintained at Github repository [cf-plugin](git@github.com:krishnan-mani/cf-plugin.git)
