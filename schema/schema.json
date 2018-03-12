@@ -705,10 +705,10 @@
             "additionalProperties": false,
             "properties": {
               "Count": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "#/definitions/integer"
               },
               "Timeout": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "#/definitions/string"
               }
             }
           }
@@ -744,22 +744,22 @@
             "additionalProperties": false,
             "properties": {
               "MaxBatchSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "#/definitions/integer"
               },
               "MinInstancesInService": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "#/definitions/integer"
               },
               "MinSuccessfulInstancesPercent": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "#/definitions/integer"
               },
               "PauseTime": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "#/definitions/string"
               },
               "SuspendProcesses": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "#/definitions/list<string>"
               },
               "WaitOnResourceSignals": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "#/definitions/boolean"
               }
             }
           },
@@ -767,7 +767,7 @@
             "type": "object",
             "additionalProperties": false,
             "IgnoreUnmodifiedGroupSizeProperties": {
-              "$ref": "basic_types.json#/definitions/boolean"
+              "$ref": "#/definitions/boolean"
             }
           }
         }
