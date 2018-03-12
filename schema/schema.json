@@ -692,6 +692,87 @@
         "Type"
       ]
     },
+    "attributes": {
+      "CreationPolicy": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "ResourceSignal"
+        ],
+        "properties": {
+          "ResourceSignal": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "Count": {
+                "$ref": "basic_types.json#/definitions/integer"
+              },
+              "Timeout": {
+                "$ref": "basic_types.json#/definitions/string"
+              }
+            }
+          }
+        }
+      },
+      "DependsOn": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "DeletionPolicy": {
+        "type": "string",
+        "enum": [
+          "Delete",
+          "Retain",
+          "Snapshot"
+        ]
+      },
+      "UpdatePolicy": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "AutoScalingRollingUpdate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "MaxBatchSize": {
+                "$ref": "basic_types.json#/definitions/integer"
+              },
+              "MinInstancesInService": {
+                "$ref": "basic_types.json#/definitions/integer"
+              },
+              "MinSuccessfulInstancesPercent": {
+                "$ref": "basic_types.json#/definitions/integer"
+              },
+              "PauseTime": {
+                "$ref": "basic_types.json#/definitions/string"
+              },
+              "SuspendProcesses": {
+                "$ref": "basic_types.json#/definitions/list<string>"
+              },
+              "WaitOnResourceSignals": {
+                "$ref": "basic_types.json#/definitions/boolean"
+              }
+            }
+          },
+          "AutoScalingScheduledAction": {
+            "type": "object",
+            "additionalProperties": false,
+            "IgnoreUnmodifiedGroupSizeProperties": {
+              "$ref": "basic_types.json#/definitions/boolean"
+            }
+          }
+        }
+      }
+    },
     "resource_types": {
       "AWS::ApiGateway::Account": {
         "type": "object",
