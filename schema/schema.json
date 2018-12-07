@@ -48,8 +48,7 @@
       "type": "object",
       "patternProperties": {
         "^[a-zA-Z0-9]+$": {
-          "oneOf": [
-            {
+          "oneOf": [{
               "$ref": "#/definitions/resource_types/AWS::ApiGateway::Account"
             },
             {
@@ -715,8 +714,7 @@
         }
       },
       "DependsOn": {
-        "oneOf": [
-          {
+        "oneOf": [{
             "type": "string"
           },
           {
@@ -827,8 +825,7 @@
                 "$ref": "#/definitions/string"
               },
               "StageKeys": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-apitgateway-apikey-stagekey"
@@ -1089,8 +1086,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-method-integration"
               },
               "MethodResponses": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-apitgateway-method-methodresponse"
@@ -1374,8 +1370,7 @@
             "additionalProperties": false,
             "properties": {
               "ApiStages": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-apigateway-usageplan-apistage"
@@ -1577,8 +1572,7 @@
                 "$ref": "#/definitions/string"
               },
               "MetricsCollection": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-as-metricscollection"
@@ -1593,8 +1587,7 @@
                 "$ref": "#/definitions/string"
               },
               "NotificationConfigurations": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-as-notificationconfigurations"
@@ -1609,8 +1602,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-as-tags"
@@ -1681,8 +1673,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "BlockDeviceMappings": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-as-launchconfig-blockdev-mapping"
@@ -1860,8 +1851,7 @@
                 "$ref": "#/definitions/integer"
               },
               "StepAdjustments": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-autoscaling-scalingpolicy-stepadjustments"
@@ -1972,8 +1962,7 @@
                 "$ref": "#/definitions/string"
               },
               "DomainValidationOptions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-certificatemanager-certificate-domainvalidationoption"
@@ -1988,8 +1977,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -2107,8 +2095,7 @@
             ]
           },
           "Type": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "enum": [
                   "AWS::CloudFormation::CustomResource"
                 ]
@@ -2219,8 +2206,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "Parameters": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-stack-parameters"
@@ -2232,8 +2218,7 @@
                 ]
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -2440,8 +2425,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -2506,8 +2490,7 @@
                 "$ref": "#/definitions/string"
               },
               "Dimensions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-cw-dimension"
@@ -2595,8 +2578,7 @@
                 "$ref": "#/definitions/string"
               },
               "Triggers": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-codecommit-repository-triggers"
@@ -2785,8 +2767,7 @@
                 "$ref": "#/definitions/string"
               },
               "ConfigurationProperties": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-resource-codepipeline-customactiontype-configurationproperties"
@@ -2856,8 +2837,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-artifactstore"
               },
               "DisableInboundStageTransitions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-disableinboundstagetransitions"
@@ -2878,8 +2858,7 @@
                 "$ref": "#/definitions/string"
               },
               "Stages": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-stages"
@@ -3098,8 +3077,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-datapipeline-pipeline-parametervalues"
               },
               "PipelineObjects": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-datapipeline-pipeline-pipelineobjects"
@@ -3111,8 +3089,7 @@
                 ]
               },
               "PipelineTags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-datapipeline-pipeline-pipelinetags"
@@ -3283,8 +3260,7 @@
             "additionalProperties": false,
             "properties": {
               "AttributeDefinitions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-dynamodb-attributedef"
@@ -3296,8 +3272,7 @@
                 ]
               },
               "GlobalSecondaryIndexes": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-dynamodb-gsi"
@@ -3309,8 +3284,7 @@
                 ]
               },
               "KeySchema": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-dynamodb-keyschema"
@@ -3322,8 +3296,7 @@
                 ]
               },
               "LocalSecondaryIndexes": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-dynamodb-lsi"
@@ -3389,8 +3362,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3459,8 +3431,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3701,8 +3672,7 @@
                 "$ref": "#/definitions/string"
               },
               "BlockDeviceMappings": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-blockdev-mapping"
@@ -3744,8 +3714,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "NetworkInterfaces": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-network-iface-embedded"
@@ -3775,8 +3744,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "SsmAssociations": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-instance-ssmassociations"
@@ -3791,8 +3759,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3810,8 +3777,7 @@
                 "$ref": "#/definitions/string"
               },
               "Volumes": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-mount-point"
@@ -3866,8 +3832,7 @@
             "additionalProperties": false,
             "properties": {
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3956,8 +3921,7 @@
             "additionalProperties": false,
             "properties": {
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4083,8 +4047,7 @@
                 "$ref": "#/definitions/string"
               },
               "PrivateIpAddresses": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-network-interface-privateipspec"
@@ -4105,8 +4068,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4304,8 +4266,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4357,8 +4318,7 @@
                 "$ref": "#/definitions/string"
               },
               "SecurityGroupEgress": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-security-group-rule"
@@ -4370,8 +4330,7 @@
                 ]
               },
               "SecurityGroupIngress": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-security-group-rule"
@@ -4383,8 +4342,7 @@
                 ]
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4612,8 +4570,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4775,8 +4732,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4888,8 +4844,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -5081,8 +5036,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -5144,8 +5098,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -5246,8 +5199,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -5424,8 +5376,7 @@
                 "$ref": "#/definitions/integer"
               },
               "LoadBalancers": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ecs-service-loadbalancers"
@@ -5481,8 +5432,7 @@
             "additionalProperties": false,
             "properties": {
               "ContainerDefinitions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions"
@@ -5500,8 +5450,7 @@
                 "$ref": "#/definitions/string"
               },
               "Volumes": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-volumes"
@@ -5551,8 +5500,7 @@
             "additionalProperties": false,
             "properties": {
               "FileSystemTags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-efs-filesystem-filesystemtags"
@@ -5708,8 +5656,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -5834,8 +5781,7 @@
                 "$ref": "#/definitions/string"
               },
               "NodeGroupConfiguration": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticache-replicationgroup-nodegroupconfiguration"
@@ -5895,8 +5841,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6171,8 +6116,7 @@
                 "$ref": "#/definitions/string"
               },
               "OptionSettings": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-beanstalk-option-settings"
@@ -6239,8 +6183,7 @@
                 "$ref": "#/definitions/string"
               },
               "OptionSettings": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-beanstalk-option-settings"
@@ -6255,8 +6198,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6317,8 +6259,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-accessloggingpolicy"
               },
               "AppCookieStickinessPolicy": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-elb-AppCookieStickinessPolicy"
@@ -6348,8 +6289,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "LBCookieStickinessPolicy": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-elb-LBCookieStickinessPolicy"
@@ -6364,8 +6304,7 @@
                 "$ref": "#/definitions/string"
               },
               "Listeners": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-elb-listener"
@@ -6377,8 +6316,7 @@
                 ]
               },
               "Policies": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-ec2-elb-policy"
@@ -6399,8 +6337,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6449,8 +6386,7 @@
             "additionalProperties": false,
             "properties": {
               "Certificates": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-listener-certificates"
@@ -6462,8 +6398,7 @@
                 ]
               },
               "DefaultActions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-listener-defaultactions"
@@ -6527,8 +6462,7 @@
             "additionalProperties": false,
             "properties": {
               "Actions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-listenerrule-actions"
@@ -6540,8 +6474,7 @@
                 ]
               },
               "Conditions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-listenerrule-conditions"
@@ -6599,8 +6532,7 @@
             "additionalProperties": false,
             "properties": {
               "LoadBalancerAttributes": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattributes"
@@ -6624,8 +6556,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6704,8 +6635,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6717,8 +6647,7 @@
                 ]
               },
               "TargetGroupAttributes": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattributes"
@@ -6730,8 +6659,7 @@
                 ]
               },
               "Targets": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription"
@@ -6809,8 +6737,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-elasticsearch-domain-snapshotoptions"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6858,8 +6785,7 @@
                 "type": "object"
               },
               "Applications": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-emr-cluster-application"
@@ -6871,8 +6797,7 @@
                 ]
               },
               "BootstrapActions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-emr-cluster-bootstrapactionconfig"
@@ -6884,8 +6809,7 @@
                 ]
               },
               "Configurations": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-emr-cluster-configuration"
@@ -6915,8 +6839,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6974,8 +6897,7 @@
                 "$ref": "#/definitions/string"
               },
               "Configurations": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-emr-cluster-configuration"
@@ -7118,8 +7040,7 @@
                 "$ref": "#/definitions/string"
               },
               "Targets": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-events-rule-target"
@@ -7262,8 +7183,7 @@
                 "$ref": "#/definitions/integer"
               },
               "EC2InboundPermissions": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-gamelift-fleet-ec2inboundpermission"
@@ -7392,8 +7312,7 @@
                 "$ref": "#/definitions/string"
               },
               "Policies": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-iam-policy"
@@ -7599,8 +7518,7 @@
                 "$ref": "#/definitions/string"
               },
               "Policies": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-iam-policy"
@@ -7664,8 +7582,7 @@
                 "$ref": "#/definitions/string"
               },
               "Policies": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-iam-policy"
@@ -8020,8 +7937,7 @@
                 "$ref": "#/definitions/integer"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -8626,8 +8542,7 @@
                 "$ref": "#/definitions/string"
               },
               "MetricTransformations": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-logs-metricfilter-metrictransformation"
@@ -8744,8 +8659,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "Environment": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-opsworks-app-environment"
@@ -8981,8 +8895,7 @@
                 "$ref": "#/definitions/string"
               },
               "VolumeConfigurations": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-opsworks-layer-volumeconfig"
@@ -9175,8 +9088,7 @@
                 "$ref": "#/definitions/boolean"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9237,8 +9149,7 @@
                 "$ref": "#/definitions/key-value-pairs"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9391,8 +9302,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9453,8 +9363,7 @@
                 "$ref": "#/definitions/key-value-pairs"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9507,8 +9416,7 @@
                 "$ref": "#/definitions/string"
               },
               "DBSecurityGroupIngress": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-rds-security-group-rule"
@@ -9526,8 +9434,7 @@
                 "$ref": "#/definitions/string"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9635,8 +9542,7 @@
                 "$ref": "#/definitions/list<string>"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9750,8 +9656,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-rds-optiongroup-optionconfigurations"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -9925,8 +9830,7 @@
                 "$ref": "#/definitions/string"
               },
               "Parameters": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-property-redshift-clusterparametergroup-parameter"
@@ -10112,8 +10016,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-route53-healthcheck-healthcheckconfig"
               },
               "HealthCheckTags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-route53-healthcheck-healthchecktags"
@@ -10165,8 +10068,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-route53-hostedzone-hostedzoneconfig"
               },
               "HostedZoneTags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-route53-hostedzone-hostedzonetags"
@@ -10181,8 +10083,7 @@
                 "$ref": "#/definitions/string"
               },
               "VPCs": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-resource-route53-hostedzone-hostedzonevpcs"
@@ -10384,8 +10285,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-s3-bucket-replicationconfiguration"
               },
               "Tags": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -10561,8 +10461,7 @@
                 "$ref": "#/definitions/string"
               },
               "Subscription": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-sns-subscription"
@@ -10792,8 +10691,7 @@
             "additionalProperties": false,
             "properties": {
               "ByteMatchTuples": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-bytematchset-bytematchtuples"
@@ -10845,8 +10743,7 @@
             "additionalProperties": false,
             "properties": {
               "IPSetDescriptors": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-ipset-ipsetdescriptors"
@@ -10904,8 +10801,7 @@
                 "$ref": "#/definitions/string"
               },
               "Predicates": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-rule-predicates"
@@ -10958,8 +10854,7 @@
                 "$ref": "#/definitions/string"
               },
               "SizeConstraints": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-sizeconstraintset-sizeconstraint"
@@ -11012,8 +10907,7 @@
                 "$ref": "#/definitions/string"
               },
               "SqlInjectionMatchTuples": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples"
@@ -11071,8 +10965,7 @@
                 "$ref": "#/definitions/string"
               },
               "Rules": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-webacl-rules"
@@ -11126,8 +11019,7 @@
                 "$ref": "#/definitions/string"
               },
               "XssMatchTuples": {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/property_types/aws-properties-waf-xssmatchset-xssmatchtuple"
@@ -11350,8 +11242,7 @@
             "$ref": "#/definitions/string"
           },
           "IntegrationResponses": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-apitgateway-method-integration-integrationresponse"
@@ -11548,8 +11439,7 @@
             "$ref": "#/definitions/integer"
           },
           "StepAdjustments": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustment"
@@ -11779,8 +11669,7 @@
             "$ref": "#/definitions/list<string>"
           },
           "CacheBehaviors": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-cloudfront-cachebehavior"
@@ -11795,8 +11684,7 @@
             "$ref": "#/definitions/string"
           },
           "CustomErrorResponses": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-cloudfront-distributionconfig-customerrorresponse"
@@ -11823,8 +11711,7 @@
             "$ref": "#/definitions/property_types/aws-properties-cloudfront-logging"
           },
           "Origins": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-cloudfront-origin"
@@ -12009,8 +11896,7 @@
             "$ref": "#/definitions/string"
           },
           "OriginCustomHeaders": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-cloudfront-origin-origincustomheader"
@@ -12537,8 +12423,7 @@
         "type": "object",
         "properties": {
           "Actions": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-stages-actions"
@@ -12550,8 +12435,7 @@
             ]
           },
           "Blockers": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-stages-blockers"
@@ -12584,8 +12468,7 @@
             "type": "object"
           },
           "InputArtifacts": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-stages-actions-inputartifacts"
@@ -12600,8 +12483,7 @@
             "$ref": "#/definitions/string"
           },
           "OutputArtifacts": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-stages-actions-outputartifacts"
@@ -12726,8 +12608,7 @@
             "$ref": "#/definitions/string"
           },
           "SourceDetails": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-config-configrule-source-sourcedetails"
@@ -12970,8 +12851,7 @@
             "$ref": "#/definitions/string"
           },
           "KeySchema": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-dynamodb-keyschema"
@@ -13024,8 +12904,7 @@
             "$ref": "#/definitions/string"
           },
           "KeySchema": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-dynamodb-keyschema"
@@ -13148,8 +13027,7 @@
         "type": "object",
         "properties": {
           "AssociationParameters": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-instance-ssmassociations-associationparameters"
@@ -13232,8 +13110,7 @@
             "$ref": "#/definitions/string"
           },
           "PrivateIpAddresses": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-network-interface-privateipspec"
@@ -13355,8 +13232,7 @@
             "$ref": "#/definitions/string"
           },
           "LaunchSpecifications": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications"
@@ -13397,8 +13273,7 @@
         "type": "object",
         "properties": {
           "BlockDeviceMappings": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings"
@@ -13431,8 +13306,7 @@
             "$ref": "#/definitions/property_types/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring"
           },
           "NetworkInterfaces": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces"
@@ -13450,8 +13324,7 @@
             "$ref": "#/definitions/string"
           },
           "SecurityGroups": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-securitygroups"
@@ -13576,8 +13449,7 @@
             "$ref": "#/definitions/string"
           },
           "PrivateIpAddresses": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses"
@@ -13710,8 +13582,7 @@
             "$ref": "#/definitions/list<string>"
           },
           "Environment": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions-environment"
@@ -13726,8 +13597,7 @@
             "$ref": "#/definitions/boolean"
           },
           "ExtraHosts": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry"
@@ -13754,8 +13624,7 @@
             "$ref": "#/definitions/integer"
           },
           "MountPoints": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints"
@@ -13770,8 +13639,7 @@
             "$ref": "#/definitions/string"
           },
           "PortMappings": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings"
@@ -13789,8 +13657,7 @@
             "$ref": "#/definitions/boolean"
           },
           "Ulimits": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit"
@@ -13805,8 +13672,7 @@
             "$ref": "#/definitions/string"
           },
           "VolumesFrom": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom"
@@ -14514,8 +14380,7 @@
             "$ref": "#/definitions/string"
           },
           "Configurations": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-emr-cluster-configuration"
@@ -14586,8 +14451,7 @@
             "$ref": "#/definitions/string"
           },
           "Configurations": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-emr-cluster-configuration"
@@ -14640,8 +14504,7 @@
         "type": "object",
         "properties": {
           "EbsBlockDeviceConfigs": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig"
@@ -14711,8 +14574,7 @@
             "$ref": "#/definitions/string"
           },
           "StepProperties": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-emr-step-hadoopjarstepconfig-keyvalue"
@@ -16027,8 +15889,7 @@
             "$ref": "#/definitions/property_types/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition"
           },
           "NoncurrentVersionTransitions": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition"
@@ -16049,8 +15910,7 @@
             "$ref": "#/definitions/property_types/aws-properties-s3-bucket-lifecycleconfig-rule-transition"
           },
           "Transitions": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-s3-bucket-lifecycleconfig-rule-transition"
@@ -16156,8 +16016,7 @@
         "type": "object",
         "properties": {
           "Rules": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key-rules"
@@ -16264,8 +16123,7 @@
             "$ref": "#/definitions/string"
           },
           "Rules": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-s3-bucket-replicationconfiguration-rules"
@@ -16354,8 +16212,7 @@
             "$ref": "#/definitions/property_types/aws-properties-s3-websiteconfiguration-redirectallrequeststo"
           },
           "RoutingRules": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "array",
                 "items": {
                   "$ref": "#/definitions/property_types/aws-properties-s3-websiteconfiguration-routingrules"
@@ -16714,8 +16571,7 @@
       }
     },
     "string": {
-      "oneOf": [
-        {
+      "oneOf": [{
           "type": "string"
         },
         {
@@ -16724,8 +16580,7 @@
       ]
     },
     "integer": {
-      "oneOf": [
-        {
+      "oneOf": [{
           "type": "string",
           "pattern": "^-?[0-9]+$"
         },
@@ -16738,8 +16593,7 @@
       ]
     },
     "boolean": {
-      "oneOf": [
-        {
+      "oneOf": [{
           "type": "boolean"
         },
         {
@@ -16757,8 +16611,7 @@
       ]
     },
     "timestamp": {
-      "oneOf": [
-        {
+      "oneOf": [{
           "type": "string",
           "pattern": "^[0-9]{10}$"
         },
@@ -16776,8 +16629,7 @@
       ]
     },
     "primitive": {
-      "anyOf": [
-        {
+      "anyOf": [{
           "$ref": "#/definitions/string"
         },
         {
@@ -16789,8 +16641,7 @@
       ]
     },
     "list<string>": {
-      "oneOf": [
-        {
+      "oneOf": [{
           "type": "array",
           "items": {
             "$ref": "#/definitions/string"
@@ -16808,8 +16659,7 @@
       }
     },
     "function": {
-      "oneOf": [
-        {
+      "oneOf": [{
           "$ref": "#/definitions/functions/Fn::Base64"
         },
         {
@@ -16829,6 +16679,15 @@
         },
         {
           "$ref": "#/definitions/functions/Fn::Select"
+        },
+        {
+          "$ref": "#/definitions/functions/Fn::ImportValue"
+        },
+        {
+          "$ref": "#/definitions/functions/Fn::Split"
+        },
+        {
+          "$ref": "#/definitions/functions/Fn::Sub"
         },
         {
           "$ref": "#/definitions/functions/Ref"
@@ -16857,8 +16716,7 @@
             "minItems": 3,
             "maxItems": 3,
             "items": {
-              "oneOf": [
-                {
+              "oneOf": [{
                   "type": "string"
                 },
                 {
@@ -16883,13 +16741,11 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
-            "items": [
-              {
+            "items": [{
                 "type": "string"
               },
               {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "string"
                   },
                   {
@@ -16909,8 +16765,7 @@
         "additionalProperties": false,
         "properties": {
           "Fn::GetAZs": {
-            "oneOf": [
-              {
+            "oneOf": [{
                 "type": "string"
               },
               {
@@ -16931,13 +16786,11 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
-            "items": [
-              {
+            "items": [{
                 "type": "string"
               },
               {
-                "oneOf": [
-                  {
+                "oneOf": [{
                     "type": "array",
                     "items": {
                       "$ref": "#/definitions/primitive"
@@ -16963,17 +16816,137 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
-            "items": [
-              {
+            "items": [{
                 "$ref": "#/definitions/integer"
               },
-              {
-              }
+              {}
             ]
           }
         },
         "required": [
           "Fn::Select"
+        ]
+      },
+      "Fn::ImportValue": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Fn::ImportValue": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": [{
+                "$ref": "#/definitions/string"
+              }, {
+                "$ref": "#/definitions/functions/Fn::Base64"
+              }, {
+                "$ref": "#/definitions/functions/Fn::FindInMap"
+              }, {
+                "$ref": "#/definitions/condition_functions/Fn::If"
+              }, {
+                "$ref": "#/definitions/functions/Fn::Join"
+              }, {
+                "$ref": "#/definitions/functions/Fn::Select"
+              }, {
+                "$ref": "#/definitions/functions/Fn::Split"
+              }, {
+                "$ref": "#/definitions/functions/Fn::Sub"
+              }, {
+                "$ref": "#/definitions/functions/Ref"
+              }]
+          }
+        },
+        "required": [
+          "Fn::ImportValue"
+        ]
+      },
+      "Fn::Split": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Fn::Split": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": [{
+                "type": "string"
+              },
+              {
+                "oneOf": [{
+                  "$ref": "#/definitions/string"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::Base64"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::FindInMap"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::GetAtt"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::GetAZs"
+                }, {
+                  "$ref": "#/definitions/condition_functions/Fn::If"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::ImportValue"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::Join"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::Select"
+                }, {
+                  "$ref": "#/definitions/functions/Fn::Sub"
+                }, {
+                  "$ref": "#/definitions/functions/Ref"
+                }]
+              }
+            ]
+          }
+        },
+        "required": [
+          "Fn::Split"
+        ]
+      },
+      "Fn::Sub": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Fn::Sub": {
+            "oneOf": [{
+                "$ref": "#/definitions/string"
+              },
+              {
+                "type": "array",
+                "minItems": 2,
+                "items": [{
+                    "type": "string"
+                  },
+                  {
+                    "oneOf": [{
+                      "$ref": "#/definitions/string"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::Base64"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::FindInMap"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::GetAtt"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::GetAZs"
+                    }, {
+                      "$ref": "#/definitions/condition_functions/Fn::If"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::ImportValue"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::Join"
+                    }, {
+                      "$ref": "#/definitions/functions/Fn::Select"
+                    }, {
+                      "$ref": "#/definitions/functions/Ref"
+                    }]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "Fn::Sub"
         ]
       },
       "Ref": {
@@ -16991,8 +16964,7 @@
     },
     "condition_function": {
       "type": "object",
-      "oneOf": [
-        {
+      "oneOf": [{
           "$ref": "#/definitions/condition_functions/Fn::And"
         },
         {
@@ -17019,8 +16991,7 @@
             "minItems": 2,
             "maxItems": 10,
             "items": {
-              "oneOf": [
-                {
+              "oneOf": [{
                   "$ref": "#/definitions/condition"
                 },
                 {
@@ -17043,8 +17014,7 @@
             "minItems": 2,
             "maxItems": 2,
             "items": {
-              "anyOf": [
-                {
+              "anyOf": [{
                   "$ref": "#/definitions/string"
                 },
                 {
@@ -17072,8 +17042,7 @@
             "type": "array",
             "minItems": 3,
             "maxItems": 3,
-            "items": [
-              {
+            "items": [{
                 "type": "string"
               },
               {},
@@ -17094,8 +17063,7 @@
             "minItems": 1,
             "maxItems": 1,
             "items": {
-              "oneOf": [
-                {
+              "oneOf": [{
                   "$ref": "#/definitions/condition"
                 },
                 {
@@ -17118,8 +17086,7 @@
             "minItems": 2,
             "maxItems": 10,
             "items": {
-              "oneOf": [
-                {
+              "oneOf": [{
                   "$ref": "#/definitions/condition"
                 },
                 {
